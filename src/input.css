@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .bg-pattern {
+    background: #360505;
+    background: linear-gradient(
+      175deg,
+      rgba(54, 5, 5, 1) 0%,
+      rgba(105, 125, 122, 1) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+}
