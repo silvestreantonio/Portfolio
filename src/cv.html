@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it" class="h-full">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -9,19 +9,27 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body class="bg-black h-full">
+<body class="bg-black min-h-screen">
     <!-- <div class="flex flex-col min-h-screen relative w-[90%] mx-auto gap-5 text-white"> -->
-    <nav class="flex justify-around gap-5 bg-black p-4 mt-3 w-full sticky top-0 z-50 text-white">
+    <nav class="flex justify-around gap-5 bg-black p-4 w-full mt-3 sticky top-0 text-white">
         <a href="./index.html">Home</a>
         <a href="./bio.html">Bio</a>
         <a href="./projects.html">Progetti</a>
     </nav>
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-3 w-[80%] mx-auto">
-        <div class=" text-gray-300 flex flex-col justify-center items-center gap-2 p-3 md:order-1"
-            id="immagineContatti">
-            <h1 class="text-3xl md:text-4xl text-center text-white p-2 mb-2 font-bold">Antonio Silvestre</h1>
-            <img src="./assets/images/fotoProfiloColori.jpeg" class="rounded-full size-24 md:size-44 my-1" alt="foto profilo">
-            <h2 class="text-2xl md:text-3xl text-center text-white p-2"><strong>Contatti</strong></h2>
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-3 w-[85%] md:w-[80%] mx-auto">
+        <div class=" text-gray-300 flex flex-col justify-center items-center md:items-stretch p-3 gap-3 md:order-1 md:w-[70%]"
+            id="descrizione">
+            <h1 class="text-3xl md:text-4xl text-white p-2 mb-2 font-bold">Antonio Silvestre</h1>
+            <img src="./assets/images/fotoProfiloColori.jpeg" class="rounded-full size-24 md:size-44 my-1 mb-2 object-cover"
+                alt="foto profilo">
+            <p class="text-center md:text-start">Coordinatore efficace con eccellenti capacità di collaborazione, formazione e comunicazione, orientato
+                alla
+                creazione di relazioni solide e a risultati concreti</p>
+        </div>
+        <hr class="border-gray-700 md:hidden">
+
+        <div class=" text-gray-300 p-3 md:order-3 flex flex-col justify-center items-center md:items-stretch" id="contatti">
+            <h2 class="text-2xl md:text-3xl text-white mb-2"><strong>Contatti</strong></h2>
             <ul class="list-disc">
                 <li>Traversa 1 Tratturo San Lorenzo, Troia</li>
                 <li>antonio.silvestre99@hotmail.it</li>
@@ -30,39 +38,10 @@
             </ul>
         </div>
         <hr class="border-gray-700 md:hidden">
-        <div class=" text-gray-300 text-center p-3 md:order-3 flex justify-center items-center" id="descrizione">
-            Coordinatore efficace con eccellenti capacità di collaborazione, formazione e comunicazione, orientato alla
-            creazione di relazioni solide e a risultati concreti
-        </div>
-        <hr class="border-gray-700 md:hidden">
-        <div class=" flex flex-col justify-center items-center p-3 text-gray-300 md:order-5" id="softSkill">
-            <h2 class="text-2xl md:text-3xl text-center text-white mb-3"><strong>Soft Skill</strong></h2>
-            <ul class="list-disc">
-                <li>Problem solving</li>
-                <li>Capacità di lavorare in team</li>
-                <li>Comunicazione efficace</li>
-                <li>Gestione dello stress e lavoro sotto pressione</li>
-                <li>Gestione del tempo e delle priorità</li>
-                <li>Orientamento all'utente e all'esperienza finale</li>
-                <li>Autonomia operativa</li>
-                <li>Adattabilità e flessibilità</li>
-                <li>Affidabilità e senso di responsabilità</li>
-                <li>Apprendimento rapido</li>
-                <li>Attenzione ai dettagli</li>
-            </ul>
-        </div>
-        <hr class="border-gray-700 md:hidden">
-        <div class=" flex flex-col justify-center items-center p-3 text-gray-300 md:order-7" id="lingue">
-            <h2 class="text-2xl md:text-3xl text-center text-white mb-3"><strong>Lingue</strong></h2>
-            <ul class="list-disc">
-                <li>Italiano: Madrelingua</li>
-                <li>Inglese: B2</li>
-            </ul>
-        </div>
-        <hr class="border-gray-700 md:hidden">
-        <div class=" text-gray-300 flex flex-col p-3 justify-center items-center md:order-2"
+
+        <div class=" text-gray-300 flex flex-col p-3 justify-center items-center md:items-stretch md:order-2"
             id="formazione">
-            <h2 class="text-2xl md:text-3xl text-center text-white mb-3"><strong>Formazione</strong></h2>
+            <h2 class="text-2xl md:text-3xl text-white mb-3"><strong>Formazione</strong></h2>
             <ul class="list-disc">
                 <li><strong class="text-gray-100">Diploma di maturità scientifica</strong>
                     <ul class="pl-2">
@@ -74,11 +53,39 @@
                         <li>Università degli Studi di Bari "Aldo Moro" | 2026</li>
                     </ul>
                 </li>
+                <li><strong class="text-gray-100">Master - AI e Agenti AI per il Business</strong>
+                    <ul class="pl-2">
+                        <li>start2impact / Università degli Studi "Guglielmo Marconi" | 2026-2027 (in corso)</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <hr class="border-gray-700 md:hidden">
-        <div class=" text-gray-300 flex flex-col justify-center items-center p-3 md:order-4" id="lavoro">
-            <h2 class="text-2xl md:text-3xl text-center text-white mb-3"><strong>Esperienza lavorativa</strong></h2>
+        <div class=" flex flex-col justify-center items-center md:items-stretch p-3 text-gray-300 md:order-7" id="lingue">
+            <h2 class="text-2xl md:text-3xl text-white mb-3"><strong>Lingue</strong></h2>
+            <ul class="list-disc">
+                <li>Italiano: Madrelingua</li>
+                <li>Inglese: B2</li>
+            </ul>
+        </div>
+        <hr class="border-gray-700 md:hidden">
+        <div class=" flex flex-col justify-center items-center md:items-stretch p-3 text-gray-300 md:order-5"
+            id="softSkill">
+            <h2 class="text-2xl md:text-3xl text-white mb-3"><strong>Soft Skill</strong></h2>
+            <ul class="list-disc">
+                <li>Problem solving</li>
+                <li>Lavoro in team e collaborazione</li>
+                <li>Comunicazione efficace</li>
+                <li>Gestione del tempo e delle priorità</li>
+                <li>Adattabilità e flessibilità</li>
+                <li>Autonomia e senso di responsabilità</li>
+                <li>Apprendimento rapido e attenzione ai dettagli</li>
+            </ul>
+        </div>
+        <hr class="border-gray-700 md:hidden">
+        <div class=" text-gray-300 flex flex-col justify-center items-center md:items-stretch p-3 md:order-4"
+            id="lavoro">
+            <h2 class="text-2xl md:text-3xl text-white mb-3"><strong>Esperienza lavorativa</strong></h2>
             <ul class="list-disc">
                 <li><strong class="text-gray-100">Cameriere</strong>
                     <ul class="pl-2">
@@ -123,44 +130,75 @@
                         <li>Gallo Matto, Bari | 2025</li>
                     </ul>
                 </li>
-                </ul>
-        </div>
-        <hr class="border-gray-700 md:hidden">
-        <div class=" text-gray-300 flex flex-col justify-center items-center p-3 md:order-6" id="tecniche">
-            <h2 class="text-2xl md:text-3xl text-center text-white mb-3"><strong>Competenze tecniche</strong></h2>
-            <ul class="list-disc">
-                <li>Programmazione orientata agli oggetti <br>(Java, C#, Python, TypeScript)</li>
-                <li>Utilizzo di Unity</li>
-                <li>Progettazione di meccaniche di gioco</li>
-                <li>Debugging e risoluzione di problemi</li>
-                <li>Versionamento del codice</li>
-                <li>Utilizzo di IDE <br>(Visual Studio Code, Ecliplse, NetBeans)</li>
-                <li>Creazione contenuti per social, grafiche, stampe <br>(Canva, Adobe Express, Illustrator)</li>
-                <li>Prototipazione e sviluppo di progetti personali</li>
             </ul>
         </div>
         <hr class="border-gray-700 md:hidden">
-        <div class=" text-gray-300 flex flex-col justify-center items-center p-3 md:order-8" id="progetti">
-            <h2 class="text-2xl md:text-3xl text-center text-white mb-3"><strong>Progetti</strong></h2>
+        <div class=" text-gray-300 flex flex-col justify-center items-center md:items-stretch p-3 md:order-6"
+            id="tecniche">
+            <h2 class="text-2xl md:text-3xl text-white mb-3"><strong>Competenze tecniche</strong></h2>
+            <ul class="list-disc">
+                <li><strong class="text-gray-100">Sviluppo Web</strong>
+                    <ul class="pl-2">
+                        <li>HTML5, CSS3, JavaScript, Tailwind CSS, SQL</li>
+                        <li>Node.js, React, TypeScript (in fase di apprendimento)</li>
+                        <li>Realizzazione di siti web responsive</li>
+                        <li>Manipolazione del DOM e gestione degli eventi</li>
+                    </ul>
+                </li>
+
+                <li><strong class="text-gray-100">Programmazione e sviluppo software</strong>
+                    <ul class="pl-2">
+                        <li>Programmazione orientata agli oggetti (Java, C#, Python, TypeScript)</li>
+                        <li>Sviluppo di videogiochi con Unity e C#</li>
+                        <li>Progettazione di meccaniche di gioco</li>
+                        <li>Debugging e risoluzione dei problemi</li>
+                    </ul>
+                </li>
+
+                <li><strong class="text-gray-100">Strumenti e ambienti di sviluppo</strong>
+                    <ul class="pl-2">
+                        <li>Git e GitHub</li>
+                        <li>Visual Studio Code, Eclipse, NetBeans</li>
+                        <li>Utilizzo di macOS e Linux</li>
+                    </ul>
+                </li>
+
+                <li><strong class="text-gray-100">Grafica e progettazione</strong>
+                    <ul class="pl-2">
+                        <li>Adobe Illustrator, Canva, Adobe Express</li>
+                        <li>Creazione di contenuti grafici e social</li>
+                        <li>Prototipazione e sviluppo di progetti personali</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr class="border-gray-700 md:hidden">
+        <div class=" text-gray-300 flex flex-col justify-center items-center md:items-stretch p-3 md:order-8"
+            id="progetti">
+            <h2 class="text-2xl md:text-3xl text-white mb-3"><strong>Progetti</strong></h2>
             <ul class="list-disc">
                 <li><strong class="text-gray-100">Uniperdida | Java</strong>
                     <ul class="pl-2">
-                        <li>Realizzazione di un gioco in Java di tipo avventura testuale per l'esame di Metodi Avanzati di Programmazione.</li>
+                        <li>Realizzazione di un gioco in Java di tipo avventura testuale per l'esame di Metodi Avanzati
+                            di Programmazione.</li>
                     </ul>
                 </li>
                 <li> <strong class="text-gray-100">Who? | Unity, C#</strong>
                     <ul class="pl-2">
-                        <li>Realizzazione tramite Unity e C# di una demo di un gioco di tipo Open World per l'esame di Sviluppo di Videogiochi.</li>
+                        <li>Realizzazione tramite Unity e C# di una demo di un gioco di tipo Open World per l'esame di
+                            Sviluppo di Videogiochi.</li>
                     </ul>
                 </li>
                 <li> <strong class="text-gray-100">Learners Runners | Unity, C#</strong>
                     <ul class="pl-2">
-                        <li>Realizzazione tramite Unity e C# di un endless runner educativo per la tesi di Laurea in Informatica.</li>
+                        <li>Realizzazione tramite Unity e C# di un endless runner educativo per la tesi di Laurea in
+                            Informatica.</li>
                     </ul>
                 </li>
                 <li> <strong class="text-gray-100">canarutebistrot.com</strong>
                     <ul class="pl-2">
-                        <li>Sito vetrina di Canarùte Bistrot con gestione tramite credenziali del database contenente il menu</li>
+                        <li>Sito vetrina di Canarùte Bistrot con gestione tramite credenziali del database contenente il
+                            menu</li>
                     </ul>
                 </li>
             </ul>
