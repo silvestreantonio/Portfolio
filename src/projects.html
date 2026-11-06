@@ -11,249 +11,237 @@
 
 <body class="bg-black">
 
-    <div class="flex flex-col min-h-screen w-[80%] mx-auto gap-5 text-white">
+    <!-- NAVBAR -->
+    <nav class="bg-black flex justify-around gap-5 p-4 text-white border-b border-b-gray-700 sticky top-0">
+        <a href="./bio.html" class="hover:underline">Bio</a>
+        <a href="./index.html" class="hover:underline">Home</a>
+        <a href="./cv.html" class="hover:underline">CV</a>
+    </nav>
 
-        <nav class="flex justify-around gap-5 p-4 mt-3 w-full">
-            <a href="./index.html" class="hover:text-red-500">Home</a>
-            <a href="./bio.html" class="hover:text-red-500">Bio</a>
-            <a href="./cv.html" class="hover:text-red-500">CV</a>
-        </nav>
+    <!-- MAIN -->
+    <main class="flex flex-col gap-5 p-2 w-[80%] md:w-[90%] mx-auto text-white">
+        <h1 class="text-3xl md:text-4xl text-center p-2 font-bold">Progetti</h1>
 
-        <main class="flex flex-1 flex-col gap-5 p-2">
-
-            <h1 class="text-3xl md:text-4xl text-center">Progetti</h1>
-
-            <!-- PROGETTO UNIPERFIDA -->
-
-            <section id="uniperfida" class="flex flex-col gap-5">
-
-                <h2 class="text-2xl md:text-3xl list-item">
-                    UniPerFida
-                </h2>
-
-                <p class="text-gray-300">
-                    Avventura grafica e testuale sviluppata in Java
+        <!-- PROGETTO UNIPERFIDA -->
+        <section id="uniperfida" class="flex flex-col gap-3">
+            <h2 class="text-2xl md:text-3xl list-item">
+                UniPerfida
+            </h2>
+            <p class="text-gray-300">
+                Avventura grafica e testuale sviluppata in Java
+            </p>
+            <div class="flex flex-col gap-2">
+                <p><strong>Tecnologie:</strong> Java, Java Swing, Apache NetBeans, H2 Database, Java Socket, OOP</p>
+                <p><strong>Tipologia:</strong> Videogioco 2D - Avventura testuale</p>
+                <p><strong>Piattaforme:</strong> Windows e macOS</p>
+                <p><strong>Progetto:</strong> Esame di Metodi Avanzati di Programmazione, Università degli Studi di
+                    Bari "Aldo Moro"</p>
+                <p><strong>Anno accademico:</strong> 2021/2022</p>
+                <p><strong class="text-white">Link: </strong><a rel="noopener noreferrer"
+                        class="text-blue-300 hover:underline" target="_blank"
+                        href="https://github.com/silvestreantonio/uniperfidaProgettoMap.git">UniPerfida</a>
                 </p>
+            </div>
+            <hr class="border-gray-700">
+            <p class="text-gray-300">
+                UniPerfida è un videogioco desktop sviluppato in Java che combina avventura grafica e testuale,
+                esplorazione e risoluzione di enigmi. Ambientato in un'università immaginaria, racconta la storia
+                di uno studente impegnato a convalidare il voto del suo ultimo esame, trasformando una semplice
+                procedura burocratica in un'avventura ricca di imprevisti e ironia sul sistema universitario.
+                Il giocatore esplora stanze distribuite su più piani, interagisce con personaggi e gestisce
+                risorse limitate per avanzare nella storia. Il gioco include una mappa dinamica, un sistema
+                di punteggio basato sul tempo e una classifica memorizzata in un database H2.
+            </p>
+            <p class="text-gray-300">
+                Il progetto è stato realizzato seguendo i principi della
+                <strong class="text-white">programmazione orientata agli oggetti (OOP)</strong>,
+                utilizzando Java Swing e Apache NetBeans per la progettazione dell'interfaccia grafica.
+                L'editor visuale di NetBeans ha permesso di organizzare pulsanti, testi e componenti grafici
+                con un approccio simile alla gestione delle interfacce UI di Unity, dedicando particolare
+                attenzione all'aspetto estetico del videogioco. È stata inoltre implementata
+                un'architettura <strong class="text-white">client-server tramite Java Socket</strong>,
+                con entrambi i processi eseguiti localmente.
+            </p>
+        </section>
+        <hr class="border-white">
 
-                <div class="flex flex-col gap-2">
-                    <p><strong>Tecnologie:</strong> Java, Java Swing, Apache NetBeans, H2 Database, Java Socket, OOP</p>
-                    <p><strong>Tipologia:</strong> Videogioco 2D - Avventura testuale</p>
-                    <p><strong>Piattaforme:</strong> Windows e macOS</p>
-                    <p><strong>Progetto:</strong> Esame di Metodi Avanzati di Programmazione, Università degli Studi di
-                        Bari "Aldo Moro"</p>
-                    <p><strong>Anno accademico:</strong> 2021/2022</p>
-                    <p><strong>Link GitHub:</strong> prova</p>
-                </div>
 
-                <hr class="border-gray-700">
-
-                <p class="text-gray-300">
-                    UniPerFida è un videogioco desktop sviluppato in Java che combina avventura grafica e testuale,
-                    esplorazione e risoluzione di enigmi. Ambientato in un'università immaginaria, racconta la storia
-                    di uno studente impegnato a convalidare il voto del suo ultimo esame, trasformando una semplice
-                    procedura burocratica in un'avventura ricca di imprevisti e ironia sul sistema universitario.
-                    Il giocatore esplora stanze distribuite su più piani, interagisce con personaggi e gestisce
-                    risorse limitate per avanzare nella storia. Il gioco include una mappa dinamica, un sistema
-                    di punteggio basato sul tempo e una classifica memorizzata in un database H2.
+        <!-- PROGETTO WHO? -->
+        <section id="who" class="flex flex-col gap-3">
+            <h2 class="text-2xl md:text-3xl list-item">
+                WHO?
+            </h2>
+            <p class="text-gray-300">
+                Avventura narrativa 3D sviluppata in Unity
+            </p>
+            <div class="flex flex-col gap-2">
+                <p><strong>Tecnologie:</strong> Unity, C#, Blender, Mixamo, Sketchfab, Unity Terrain Tools</p>
+                <p><strong>Tipologia:</strong> Videogioco 3D – Avventura narrativa e RPG</p>
+                <p><strong>Piattaforme:</strong> Windows e macOS</p>
+                <p><strong>Progetto:</strong> Esame di Sviluppo dei Videogiochi, Università degli Studi di Bari
+                    "Aldo Moro"</p>
+                <p><strong>Anno accademico:</strong> 2022/2023</p>
+                <p><strong class="text-white">Link: </strong><a rel="noopener noreferrer"
+                        class="text-blue-300 hover:underline" target="_blank"
+                        href="https://drive.google.com/drive/folders/1vNz8VHp627dALQh1UdwRK70vtJDG-R1I?usp=sharing">WHO?</a>
                 </p>
+            </div>
+            <hr class="border-gray-700">
+            <p class="text-gray-300">
+                WHO? è un videogioco 3D sviluppato con Unity e C# che combina esplorazione, avventura narrativa
+                ed elementi RPG. Ambientato su un'isola ricca di foreste e sentieri, racconta la storia
+                di un giovane insicuro del proprio aspetto fisico che intraprende un viaggio alla ricerca
+                della bellezza ideale. Durante l'avventura il giocatore esplora l'ambiente, interagisce
+                con personaggi non giocanti (NPC), affronta combattimenti e completa obiettivi narrativi.
+                Una delle meccaniche principali è la trasformazione estetica del protagonista attraverso
+                tre differenti skin, che rappresentano il contrasto tra apparenza esteriore e identità personale.
+            </p>
+            <p class="text-gray-300">
+                Il progetto è stato sviluppato interamente in
+                <strong class="text-white">C# utilizzando Unity</strong> per la gestione del movimento,
+                delle interazioni, delle animazioni e del sistema di combattimento.
+                Per la realizzazione degli ambienti tridimensionali sono stati utilizzati
+                Unity Terrain Tools, shader e asset grafici, mentre
+                <strong class="text-white">Blender</strong> è stato impiegato per lavorare sui modelli
+                dei personaggi, insieme a Sketchfab e Mixamo per modelli e animazioni.
+                Particolare attenzione è stata dedicata alla costruzione dell'isola,
+                all'atmosfera sonora e alla progressione narrativa, realizzando un'esperienza
+                che utilizza il videogioco per affrontare temi come l'autostima e l'accettazione di sé.
+            </p>
+        </section>
+        <hr class="border-white">
 
-                <p class="text-gray-300">
-                    Il progetto è stato realizzato seguendo i principi della
-                    <strong class="text-white">programmazione orientata agli oggetti (OOP)</strong>,
-                    utilizzando Java Swing e Apache NetBeans per la progettazione dell'interfaccia grafica.
-                    L'editor visuale di NetBeans ha permesso di organizzare pulsanti, testi e componenti grafici
-                    con un approccio simile alla gestione delle interfacce UI di Unity, dedicando particolare
-                    attenzione all'aspetto estetico del videogioco. È stata inoltre implementata
-                    un'architettura <strong class="text-white">client-server tramite Java Socket</strong>,
-                    con entrambi i processi eseguiti localmente.
+        <!-- PROGETTO LEARNERS RUNNERS -->
+        <section id="learners-runners" class="flex flex-col gap-3">
+            <h2 class="text-2xl md:text-3xl list-item">
+                Learners Runners
+            </h2>
+            <p class="text-gray-300">
+                Endless runner educativo sviluppato in Unity per supportare
+                l'apprendimento dell'inglese nel settore della ristorazione.
+            </p>
+            <div class="flex flex-col gap-2">
+                <p><strong>Tecnologie:</strong> Unity 6.2, C#, JSON</p>
+                <p><strong>Tipologia:</strong> Videogioco educativo 3D – Endless Runner</p>
+                <p><strong>Piattaforme:</strong> iOS e Android</p>
+                <p><strong>Progetto:</strong> Tesi di laurea in Sviluppo dei Videogiochi, Università degli Studi di
+                    Bari "Aldo Moro"</p>
+                <p><strong>Anno accademico:</strong> 2024/2025</p>
+                <p><strong class="text-white">Link: </strong><a rel="noopener noreferrer"
+                        class="text-blue-300 hover:underline" target="_blank"
+                        href="https://drive.google.com/drive/folders/1eqTHqZiJTE5WIp3AKWOOBOiHBBy0DQfn?usp=sharing">Learners
+                        Runners</a></p>
+            </div>
+            <hr class="border-gray-700">
+            <p class="text-gray-300">
+                Learners Runners è un videogioco educativo sviluppato con Unity 6.2 e C# come progetto
+                di tesi di laurea, con l'obiettivo di supportare i lavoratori della ristorazione
+                nell'apprendimento del vocabolario inglese. Ispirato alle meccaniche di Subway Surfers,
+                il gioco propone un endless runner tridimensionale nel quale il giocatore deve evitare
+                ostacoli, raccogliere monete e selezionare le lettere corrette per comporre
+                la traduzione inglese degli ingredienti presenti in un menu.
+                Il sistema integra missioni, personaggi sbloccabili, pronuncia audio e una progressione
+                della difficoltà, trasformando l'apprendimento linguistico in un'esperienza
+                interattiva basata sulla <strong class="text-white">gamification</strong>.
+            </p>
+            <p class="text-gray-300">
+                Dal punto di vista tecnico, il progetto utilizza un'architettura modulare sviluppata
+                in <strong class="text-white">C#</strong>, con generazione procedurale degli ostacoli,
+                gestione dinamica dell'ambiente e contenuti educativi configurabili attraverso
+                <strong class="text-white">file JSON</strong>, permettendo di adattare il gioco
+                a differenti menu senza modificare il codice.
+                Il videogioco è stato inoltre sottoposto a una
+                <strong class="text-white">sperimentazione su 20 partecipanti</strong>,
+                utilizzando il Game Experience Questionnaire (GEQ).
+                I risultati hanno evidenziato un'esperienza complessivamente positiva,
+                con valori elevati di competenza percepita, immersione e coinvolgimento,
+                offrendo indicazioni incoraggianti sul potenziale della gamification
+                come strumento di supporto alla formazione professionale.
+            </p>
+            <hr class="border-gray-700">
+        </section>
+
+        <!-- PROGETTO CANARÙTE BISTROT -->
+        <section id="canarute-bistrot" class="flex flex-col gap-3">
+            <h2 class="text-2xl md:text-3xl list-item">
+                Canarùte Bistrot
+            </h2>
+            <p class="text-gray-300">
+                Menu digitale responsive sviluppato per consentire ai clienti
+                di consultare piatti, prezzi e allergeni direttamente dal proprio
+                smartphone tramite QR code.
+            </p>
+            <div class="flex flex-col gap-2">
+                <p><strong>Tecnologie:</strong> HTML5, CSS3, JavaScript, PHP 8, MySQL, JSON</p>
+                <p><strong>Tipologia:</strong> Sito web dinamico con menu digitale e pannello di amministrazione</p>
+                <p><strong>Piattaforme:</strong> Desktop, tablet e dispositivi mobili</p>
+                <p><strong>Progetto:</strong> Sito ufficiale e sistema di gestione del menu per Canarùte Bistrot</p>
+                <p><strong>Anno:</strong> 2026</p>
+                <p><strong class="text-white">Link: </strong><a rel="noopener noreferrer"
+                        class="text-blue-300 hover:underline" target="_blank"
+                        href="https://www.canarutebistrot.com">Canarùte Bistrot</a>
                 </p>
+            </div>
+            <hr class="border-gray-700">
+            <p class="text-gray-300">
+                Canarùte Bistrot è un sito web responsive progettato per digitalizzare
+                il menu del locale e renderlo facilmente consultabile attraverso
+                smartphone, tablet e computer. Il menu è organizzato in categorie
+                e sottocategorie e presenta nomi, descrizioni, prezzi, formati,
+                varianti e disponibilità dei prodotti. Il sistema supporta inoltre
+                prodotti complessi come i panini personalizzabili, consentendo di
+                scegliere il tipo di burger e visualizzare opzioni aggiuntive,
+                supplementi e indicazioni dedicate. Il sito è disponibile in
+                <strong class="text-white">italiano e inglese</strong> e integra
+                una gestione completa degli allergeni alimentari, con icone
+                interattive e una pagina dedicata alla spiegazione dei 14 allergeni.
+                Sono presenti anche indicazioni per i prodotti potenzialmente
+                congelati, prodotti temporaneamente non disponibili, privacy policy
+                e cookie policy. L'interfaccia è stata sviluppata con particolare
+                attenzione alla leggibilità da smartphone e alla coerenza grafica
+                con l'identità visiva del locale.
+            </p>
+            <p class="text-gray-300">
+                Dal punto di vista tecnico, il menu viene generato dinamicamente
+                a partire da un <strong class="text-white">database MySQL</strong>
+                e distribuito al frontend attraverso un'
+                <strong class="text-white">API PHP in formato JSON</strong>.
+                Un pannello di amministrazione riservato permette al personale
+                di aggiungere, modificare, eliminare e riordinare prodotti,
+                categorie, sottocategorie, varianti, formati e burger, oltre
+                a gestire prezzi, immagini, allergeni e disponibilità senza
+                intervenire direttamente sul codice. Il pannello include
+                autenticazione tramite password cifrata, protezione CSRF,
+                limitazione dei tentativi di accesso, sessioni protette e
+                controlli sui dati inseriti. Il progetto comprende inoltre
+                strumenti di supporto per il personale, tra cui una guida
+                illustrata all'utilizzo del pannello amministrativo e una
+                versione stampabile del menu destinata alla cucina.
+            </p>
+        </section>
+        <hr class="border-white">
 
-                <hr class="border-gray-700">
+        <!-- GRAFICHE-->
+        <section id="grafiche" class="flex flex-col gap-3">
+            <h2 class="text-2xl md:text-3xl list-item">
+                Progettazione grafica e comunicazione digitale per la ristorazione
+            </h2>
+            <p class="text-gray-300">
+                Realizzazione di materiali grafici e contenuti digitali per attività di ristorazione:
+                progettazione di totem pubblicitari di grande formato (fino a 2 metri),
+                creazione e gestione di menu digitali accessibili tramite QR code,
+                ideazione di loghi e identità visive, produzione di video per Instagram e Facebook
+                e grafiche promozionali per eventi sportivi.
+            </p>
+            <p><strong class="text-white">Link: </strong><a rel="noopener noreferrer"
+                    class="text-blue-300 hover:underline" target="_blank"
+                    href="https://drive.google.com/drive/folders/1LjepP4KcEX8V07JfZCjxBILhuNqlmL13?usp=sharing">Grafiche</a>
+            </p>
+        </section>
+        <hr class="border-white">
 
-            </section>
+    </main>
 
-            <!-- PROGETTO WHO? -->
-
-            <section id="who" class="flex flex-col gap-5">
-
-                <h2 class="text-2xl md:text-3xl list-item">
-                    WHO?
-                </h2>
-
-                <p class="text-gray-300">
-                    Avventura narrativa 3D sviluppata in Unity
-                </p>
-
-                <div class="flex flex-col gap-2">
-                    <p><strong>Tecnologie:</strong> Unity, C#, Blender, Mixamo, Sketchfab, Unity Terrain Tools</p>
-                    <p><strong>Tipologia:</strong> Videogioco 3D – Avventura narrativa e RPG</p>
-                    <p><strong>Piattaforme:</strong> Windows e macOS</p>
-                    <p><strong>Progetto:</strong> Esame di Sviluppo dei Videogiochi, Università degli Studi di Bari
-                        "Aldo Moro"</p>
-                    <p><strong>Anno accademico:</strong> 2022/2023</p>
-                    <p><strong>Link GitHub:</strong> prova</p>
-                </div>
-
-                <hr class="border-gray-700">
-
-                <p class="text-gray-300">
-                    WHO? è un videogioco 3D sviluppato con Unity e C# che combina esplorazione, avventura narrativa
-                    ed elementi RPG. Ambientato su un'isola ricca di foreste e sentieri, racconta la storia
-                    di un giovane insicuro del proprio aspetto fisico che intraprende un viaggio alla ricerca
-                    della bellezza ideale. Durante l'avventura il giocatore esplora l'ambiente, interagisce
-                    con personaggi non giocanti (NPC), affronta combattimenti e completa obiettivi narrativi.
-                    Una delle meccaniche principali è la trasformazione estetica del protagonista attraverso
-                    tre differenti skin, che rappresentano il contrasto tra apparenza esteriore e identità personale.
-                </p>
-
-                <p class="text-gray-300">
-                    Il progetto è stato sviluppato interamente in
-                    <strong class="text-white">C# utilizzando Unity</strong> per la gestione del movimento,
-                    delle interazioni, delle animazioni e del sistema di combattimento.
-                    Per la realizzazione degli ambienti tridimensionali sono stati utilizzati
-                    Unity Terrain Tools, shader e asset grafici, mentre
-                    <strong class="text-white">Blender</strong> è stato impiegato per lavorare sui modelli
-                    dei personaggi, insieme a Sketchfab e Mixamo per modelli e animazioni.
-                    Particolare attenzione è stata dedicata alla costruzione dell'isola,
-                    all'atmosfera sonora e alla progressione narrativa, realizzando un'esperienza
-                    che utilizza il videogioco per affrontare temi come l'autostima e l'accettazione di sé.
-                </p>
-
-                <hr class="border-gray-700">
-
-            </section>
-
-            <!-- PROGETTO LEARNERS RUNNERS -->
-
-            <section id="learners-runners" class="flex flex-col gap-5">
-
-                <h2 class="text-2xl md:text-3xl list-item">
-                    Learners Runners
-                </h2>
-
-                <p class="text-gray-300">
-                    Endless runner educativo sviluppato in Unity per supportare
-                    l'apprendimento dell'inglese nel settore della ristorazione.
-                </p>
-
-                <div class="flex flex-col gap-2">
-                    <p><strong>Tecnologie:</strong> Unity 6.2, C#, JSON</p>
-                    <p><strong>Tipologia:</strong> Videogioco educativo 3D – Endless Runner</p>
-                    <p><strong>Piattaforme:</strong> iOS e Android</p>
-                    <p><strong>Progetto:</strong> Tesi di laurea in Sviluppo dei Videogiochi, Università degli Studi di
-                        Bari "Aldo Moro"</p>
-                    <p><strong>Anno accademico:</strong> 2024/2025</p>
-                    <p><strong>Link GitHub:</strong> prova</p>
-                </div>
-
-                <hr class="border-gray-700">
-
-                <p class="text-gray-300">
-                    Learners Runners è un videogioco educativo sviluppato con Unity 6.2 e C# come progetto
-                    di tesi di laurea, con l'obiettivo di supportare i lavoratori della ristorazione
-                    nell'apprendimento del vocabolario inglese. Ispirato alle meccaniche di Subway Surfers,
-                    il gioco propone un endless runner tridimensionale nel quale il giocatore deve evitare
-                    ostacoli, raccogliere monete e selezionare le lettere corrette per comporre
-                    la traduzione inglese degli ingredienti presenti in un menu.
-                    Il sistema integra missioni, personaggi sbloccabili, pronuncia audio e una progressione
-                    della difficoltà, trasformando l'apprendimento linguistico in un'esperienza
-                    interattiva basata sulla <strong class="text-white">gamification</strong>.
-                </p>
-
-                <p class="text-gray-300">
-                    Dal punto di vista tecnico, il progetto utilizza un'architettura modulare sviluppata
-                    in <strong class="text-white">C#</strong>, con generazione procedurale degli ostacoli,
-                    gestione dinamica dell'ambiente e contenuti educativi configurabili attraverso
-                    <strong class="text-white">file JSON</strong>, permettendo di adattare il gioco
-                    a differenti menu senza modificare il codice.
-                    Il videogioco è stato inoltre sottoposto a una
-                    <strong class="text-white">sperimentazione su 20 partecipanti</strong>,
-                    utilizzando il Game Experience Questionnaire (GEQ).
-                    I risultati hanno evidenziato un'esperienza complessivamente positiva,
-                    con valori elevati di competenza percepita, immersione e coinvolgimento,
-                    offrendo indicazioni incoraggianti sul potenziale della gamification
-                    come strumento di supporto alla formazione professionale.
-                </p>
-
-                <hr class="border-gray-700">
-
-            </section>
-
-            <!-- PROGETTO CANARÙTE BISTROT -->
-
-            <section id="canarute-bistrot" class="flex flex-col gap-5">
-
-                <h2 class="text-2xl md:text-3xl list-item">
-                    Canarùte Bistrot
-                </h2>
-
-                <p class="text-gray-300">
-                    Menu digitale responsive sviluppato per consentire ai clienti
-                    di consultare piatti, prezzi e allergeni direttamente dal proprio
-                    smartphone tramite QR code.
-                </p>
-
-                <div class="flex flex-col gap-2">
-                    <p><strong>Tecnologie:</strong> HTML5, CSS3, JavaScript, PHP 8, MySQL, JSON</p>
-                    <p><strong>Tipologia:</strong> Sito web dinamico con menu digitale e pannello di amministrazione</p>
-                    <p><strong>Piattaforme:</strong> Desktop, tablet e dispositivi mobili</p>
-                    <p><strong>Progetto:</strong> Sito ufficiale e sistema di gestione del menu per Canarùte Bistrot</p>
-                    <p><strong>Anno:</strong> 2026</p>
-                    <p>
-                        <strong>Sito web:</strong>
-                        <a href="https://www.canarutebistrot.com" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-red-500">
-                            canarutebistrot.com
-                        </a>
-                    </p>
-                </div>
-
-                <hr class="border-gray-700">
-
-                <p class="text-gray-300">
-                    Canarùte Bistrot è un sito web responsive progettato per digitalizzare
-                    il menu del locale e renderlo facilmente consultabile attraverso
-                    smartphone, tablet e computer. Il menu è organizzato in categorie
-                    e sottocategorie e presenta nomi, descrizioni, prezzi, formati,
-                    varianti e disponibilità dei prodotti. Il sistema supporta inoltre
-                    prodotti complessi come i panini personalizzabili, consentendo di
-                    scegliere il tipo di burger e visualizzare opzioni aggiuntive,
-                    supplementi e indicazioni dedicate. Il sito è disponibile in
-                    <strong class="text-white">italiano e inglese</strong> e integra
-                    una gestione completa degli allergeni alimentari, con icone
-                    interattive e una pagina dedicata alla spiegazione dei 14 allergeni.
-                    Sono presenti anche indicazioni per i prodotti potenzialmente
-                    congelati, prodotti temporaneamente non disponibili, privacy policy
-                    e cookie policy. L'interfaccia è stata sviluppata con particolare
-                    attenzione alla leggibilità da smartphone e alla coerenza grafica
-                    con l'identità visiva del locale.
-                </p>
-
-                <p class="text-gray-300">
-                    Dal punto di vista tecnico, il menu viene generato dinamicamente
-                    a partire da un <strong class="text-white">database MySQL</strong>
-                    e distribuito al frontend attraverso un'
-                    <strong class="text-white">API PHP in formato JSON</strong>.
-                    Un pannello di amministrazione riservato permette al personale
-                    di aggiungere, modificare, eliminare e riordinare prodotti,
-                    categorie, sottocategorie, varianti, formati e burger, oltre
-                    a gestire prezzi, immagini, allergeni e disponibilità senza
-                    intervenire direttamente sul codice. Il pannello include
-                    autenticazione tramite password cifrata, protezione CSRF,
-                    limitazione dei tentativi di accesso, sessioni protette e
-                    controlli sui dati inseriti. Il progetto comprende inoltre
-                    strumenti di supporto per il personale, tra cui una guida
-                    illustrata all'utilizzo del pannello amministrativo e una
-                    versione stampabile del menu destinata alla cucina.
-                </p>
-
-                <hr class="border-gray-700">
-
-            </section>
-
-        </main>
-
-    </div>
 
 </body>
 
