@@ -9,46 +9,86 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body class="bg-black">
+<body class="bg-pattern font-text">
 
     <!-- NAVBAR-->
-        <nav class="bg-black flex justify-around gap-5 p-4 text-white border-b border-b-gray-700 sticky top-0">
-            <a href="./projects.html" class="hover:underline">Progetti</a>
-            <a href="./index.html" class="hover:underline">Home</a>
-            <a href="./cv.html" class="hover:underline">CV</a>
-        </nav>
+    <nav class="bg-black flex justify-around gap-5 p-4 text-white border-b border-b-gray-700 sticky top-0 font-title">
+        <a href="./projects.html" class="hover:underline">Progetti</a>
+        <a href="./index.html" class="hover:underline">Home</a>
+        <a href="./cv.html" class="hover:underline">CV</a>
+    </nav>
 
-        <!-- MAIN -->
-        <main class="flex flex-col gap-5 p-2 w-[80%] md:w-[70%] mx-auto text-white">
-            <h1 class="text-3xl md:text-4xl text-center font-bold p-2">Mi presento</h1>
-            <p class="mb-3">Ciao, sono Antonio Silvestre e sono un ragazzo di 27 anni laureato in Informatica con una forte passione per lo sviluppo software, le tecnologie web e
-            l'intelligenza artificiale.
-            <br><br>
+    <!-- MAIN -->
+    <main class="flex flex-col gap-5 p-2 w-[80%] md:w-[70%] mx-auto text-white">
 
-            Il mio percorso unisce una solida formazione universitaria a circa dieci anni di esperienza professionale
-            nel settore della ristorazione, dove ho iniziato come cameriere fino a ricoprire ruoli di responsabilità
-            nella gestione della sala e nella comunicazione digitale. Una gavetta che considero fondamentale nella mia
-            crescita personale e professionale, grazie alla quale ho sviluppato capacità organizzative, problem solving,
-            adattabilità e attitudine al lavoro di squadra.
-            <br><br>
+        <!-- BIO -->
+        <div>
+            <h1 class="text-3xl md:text-4xl text-center font-bold p-2 font-title">Mi presento</h1>
+            <p class="p-2">Ciao, sono Antonio Silvestre e sono un ragazzo di 27 anni laureato in Informatica con una
+                forte passione per lo sviluppo software, le tecnologie web e
+                l'intelligenza artificiale.
+                <br><br>
 
-            Durante gli studi universitari ho acquisito competenze nella programmazione, nella progettazione software e
-            nello sviluppo di applicazioni, mettendole in pratica attraverso progetti realizzati con Java, C# e Unity.
-            Tra questi, *Learners Runners*, un videogioco educativo sviluppato come progetto di tesi. Ho inoltre
-            applicato le mie competenze allo sviluppo web, lavorando al sito e al sistema di gestione del menu digitale
-            di Canarùte Bistrot, oltre che alla realizzazione di progetti grafici per attività di ristorazione.
-            <br><br>
+                Il mio percorso unisce una solida formazione universitaria a circa dieci anni di esperienza
+                professionale
+                nel settore della ristorazione, dove ho iniziato come cameriere fino a ricoprire ruoli di responsabilità
+                nella gestione della sala e nella comunicazione digitale. Una gavetta che considero fondamentale nella
+                mia
+                crescita personale e professionale, grazie alla quale ho sviluppato capacità organizzative, problem
+                solving,
+                adattabilità e attitudine al lavoro di squadra.
+                <br><br>
 
-            Attualmente sto ampliando le mie competenze nello sviluppo Full Stack e nell'intelligenza artificiale,
-            attraverso un Master in AI e Agenti AI per il Business, con l'obiettivo di progettare e sviluppare soluzioni
-            software complete, innovative e orientate alle esigenze reali.
-            <br><br>
+                Durante gli studi universitari ho acquisito competenze nella programmazione, nella progettazione
+                software e
+                nello sviluppo di applicazioni, mettendole in pratica attraverso progetti realizzati con Java, C# e
+                Unity.
+                Tra questi, <strong>Learners Runners</strong>, un videogioco educativo sviluppato come progetto di tesi.
+                Ho inoltre
+                applicato le mie competenze allo sviluppo web, lavorando al sito e al sistema di gestione del menu
+                digitale
+                di Canarùte Bistrot, oltre che alla realizzazione di progetti grafici per attività di ristorazione.
+                <br><br>
 
-            Credo nella formazione continua, nel valore dell'esperienza e nella capacità di affrontare nuove sfide. Il
-            mio obiettivo è unire le competenze tecniche acquisite durante il percorso universitario con la concretezza,
-            la responsabilità e la determinazione maturate in dieci anni di lavoro.
+                Attualmente sto ampliando le mie competenze nello sviluppo Full Stack e nell'intelligenza artificiale,
+                attraverso un Master in AI e Agenti AI per il Business, con l'obiettivo di progettare e sviluppare
+                soluzioni
+                software complete, innovative e orientate alle esigenze reali.
+                <br><br>
+
+                Credo nella formazione continua, nel valore dell'esperienza e nella capacità di affrontare nuove sfide.
+                Il
+                mio obiettivo è unire le competenze tecniche acquisite durante il percorso universitario con la
+                concretezza,
+                la responsabilità e la determinazione maturate in dieci anni di lavoro.
             </p>
-        </main>
+        </div>
+        <div>
+            <!-- FORM -->
+            <form action="#" method="POST"
+                class="bg-black border border-gray-700 flex flex-col gap-4 rounded-xl p-5 text-white">
+
+                <h2 class="text-2xl md:text-3xl font-bold text-center p-2 font-title">
+                    Contattami
+                </h2>
+
+                <input type="text" name="nome" placeholder="Il tuo nome" required
+                    class="bg-black text-white placeholder:text-gray-500 border border-gray-700 rounded-lg p-3 outline-none duration-300 focus:border-white">
+
+                <input type="email" name="email" placeholder="La tua email" required
+                    class="bg-black text-white placeholder:text-gray-500 border border-gray-700 rounded-lg p-3 outline-none duration-300 focus:border-white">
+
+                <textarea name="messaggio" placeholder="Il tuo messaggio..." required
+                    class="bg-black text-white placeholder:text-gray-500 border border-gray-700 rounded-lg p-3 h-32 resize-none outline-none duration-300 focus:border-white"></textarea>
+
+                <button type="submit"
+                    class="bg-black text-white border border-gray-700 rounded-lg p-3 duration-300 hover:bg-white hover:text-black cursor-pointer">
+                    Invia messaggio
+                </button>
+
+            </form>
+        </div>
+    </main>
     </div>
 </body>
 
